@@ -138,7 +138,9 @@ const analysis = async () => {
     const inputTensor = tf.tensor2d(
         trainData.map((d) => [new Date(d.date).getTime(), d.price])
     );
-    const outputTensor = tf.tensor2d(trainData.map((d) => [d.price]));
+    const outputTensor = tf.tensor2d(
+        trainData.map((d) => [new Date(d.date).getTime()])
+    );
 
     const inputValidTensor = tf.tensor2d(
         validData.map((d) => [new Date(d.date).getTime(), d.price])
