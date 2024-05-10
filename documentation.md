@@ -46,14 +46,10 @@ Ez a script létrehozza az indexeket, és a megfelelő mappingekkel rendelkező 
 
 ### Az adatok formázása
 Az adatok formázása során az objectek kerültek létrehozásra. Erre azért volt szükség, hogy az Elasticsearch megfelelően tudja kezelni az adatokat.
+Itt egy struktúra alapján minden oszlophoz létrehoztam egy nevet illetve egy parser függvényt, ami a megfelelő típusra konvertálja az adatokat.
 
 ### Az adatok tisztítása
-
-## Adatok elemzése
-
-
-## Adatok megjelenítése Kibanában
-
+Az adatok tisztítása során azokat az adatokat távolítottam el, amelyek nem voltak relevánsak az elemzés szempontjából, illetve invalid értékeket tartalmaztak.
 
 ## Fejlesztői környezet
 A projekt fejlesztéséhez a következő technológiákat használtam:
@@ -62,6 +58,22 @@ A projekt fejlesztéséhez a következő technológiákat használtam:
 - Kibana
 - Docker
 
-További csomagok:
+## Futtatás
+A program futtatásához szükséges a Docker és a Node.js telepítése. A program futtatásához a következő lépéseket kell végrehajtani:
+Klónozás után szükséges az `npm install` parancs kiadása a szükséges csomagok telepítéséhez. Majd az Elasticsearch és Kibana konténerek futtatása a következő parancsokkal:
+```bash
+./startes.sh
+./startkibana.sh
+```
+Ezután a következő parancsok kiadásával lehet futtatni a scripteket:
+
+
+| Parancs                       | Leírás                                                                          |
+|-------------------------------|---------------------------------------------------------------------------------|
+| `npm run create-index`        | Elasticsearch index létrehozása                                                 |
+| `npm run load-data`           | Összes adat betöltése Elasticsearch-be                                          |
+| `npm run load-data-cron`      | Az összes adat betöltése minden hétfőn 0 óra 0 perckor egy cronjob segítségével |
+| `npm run load-data-for-store` | Egy bolt adatainak betöltése, a bolt nevét a parancs után kell megadni          |
+
 
 

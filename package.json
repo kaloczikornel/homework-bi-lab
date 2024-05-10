@@ -4,12 +4,10 @@
     "description": "",
     "main": "scripts/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "create-index": "node scripts/index.js createIndex",
         "load-data": "node scripts/index.js loadAllData",
         "load-data-cron": "node scripts/index.js loadDataCron",
         "load-data-for-store": "node scripts/index.js loadDataForStore",
-        "server": "node index.js"
     },
     "keywords": [],
     "author": "",
