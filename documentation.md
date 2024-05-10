@@ -6,7 +6,7 @@
 - termékek árának változása a különböző szupermarketekben különböző kategóriákra
 
 ## Adatok forrása:
-Az adatokat a [UK Supermarket Prices](https://www.kaggle.com/datasets/declanmcalinden/time-series-uk-supermarket-data) adathalmaz tartalmazza.
+Az adatokat a [UK Supermarket Prices](https://www.kaggle.com/datasets/declanmcalinden/time-series-uk-supermarket-data) adathalmaz tartalmazza. Ezeket szükséges a gyökérben létrehozott data mappába letölteni, hogy a scripteket lehessen futtatni.
 
 ## Adatok előkészítése
 Az adatok előkészítéséhez a következő lépéseket hajtottam végre:
