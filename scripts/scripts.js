@@ -172,8 +172,7 @@ const loadDataForStore = async (store) => {
                 { index: { _index: INDEX_NAME } },
                 doc,
             ]);
-            //await client.bulk({ refresh: true, body });
-            console.log(chunk);
+            await client.bulk({ refresh: true, body });
             callback();
         },
     });
