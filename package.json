@@ -7,7 +7,7 @@
         "create-index": "node scripts/index.js createIndex",
         "load-data": "node scripts/index.js loadAllData",
         "load-data-cron": "node scripts/index.js loadDataCron",
-        "load-data-for-store": "node scripts/index.js loadDataForStore",
+        "load-data-for-store": "node scripts/index.js loadDataForStore"
     },
     "keywords": [],
     "author": "",
